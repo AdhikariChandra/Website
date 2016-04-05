@@ -20,7 +20,7 @@ body {
 	height: 220pt;
 }
 
-.headertext {
+h2 {
 	font-family: "Courier" !important;
 	font-size: 12pt !important;
 	position: absolute;
@@ -58,4 +58,20 @@ h1 {
 	color: #3C0048 !important;
 	font-size: 24pt !important;
 	padding: 12pt 20pt;
+}
+
+.syntax {
+	color: #ddd;
+}
+
+.syntax_main {
+	color: #93C6F7;
+}
+
+.syntax_equals {
+	color: #ff4d4d;
+}
+
+.syntax_string {
+	color: #ccff66;
 }
