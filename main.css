@@ -1,5 +1,5 @@
 .nav a {
-  color: #5a5a5a;
+  color: #ddd;
   font-size: 11px;
   font-weight: bold;
   padding: 14px 10px;
@@ -16,6 +16,40 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.header {
+	padding:0;
+	background-color: #402157;
+	height: 260pt;
+}
+
+.headertext {
+	position: absolute;
+	left: 50%;
+	top: 148pt;
+	transform: translateX(-50%);
+}
+
+.logo {
+	width: 94pt;
+	height: 94pt;
+	background-image:url(logo.svg);
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	position:absolute;
+	left:50%;
+	top: 60pt;
+	transform:translateX(-50%);
+}
+
+h1 {
+	font-size: 32pt;
+	color: #ddd;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:200;
+}
+	
 
 .jumbotron .container {
   position: relative;
@@ -52,10 +86,7 @@
 .learn-more a {
   color: #00b0ff;
 }
-.neighborhood-guides {
-    background-color: #efefef
-    border-bottom: 1px solid #dbdbdb
-}
+
 .neighborhood-guides h2 {
     color: #393c3d;
     font-size: 24px;
