@@ -33,7 +33,7 @@
 .logo {
 	width: 94pt;
 	height: 94pt;
-	background-image:url(logo.svg);
+	background-image:url(res/img/logo.svg);
 	background-size:contain;
 	background-repeat:no-repeat;
 	background-position:center;
