@@ -50,14 +50,19 @@ h1 {
 }
 
 .container {
-	width: 70%;
+	width: 60%;
 	margin: auto;
+    padding: 12pt 20pt;
 }
 
-.intro {
-	color: #3C0048 !important;
-	font-size: 24pt !important;
-	padding: 12pt 20pt;
+.title_container {
+    
+}
+
+.title {
+	color: #333 !important;
+	font-size: 20pt !important;
+    font-weight: 400;
 }
 
 .syntax {
