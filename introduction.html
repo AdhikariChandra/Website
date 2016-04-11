@@ -5,15 +5,34 @@
         <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
         <link rel="stylesheet" href="main.css">
         <title> Introduction </title>
+        
+        <script src="res/js/classie.js"></script>
+        <script>
+            function init() {
+                window.addEventListener('scroll', function(e){
+                    var distanceY = window.pageYOffset ||       document.documentElement.scrollTop,
+                        shrinkOn = 200,
+                        header = document.querySelector("header");
+                    if (distanceY > shrinkOn) {
+                        classie.add(header,"smaller");
+                    } else {
+                        if (classie.has(header,"smaller")) {
+                            classie.remove(header,"smaller");
+                        }
+                    }
+                });
+            }
+            window.onload = init();
+        </script>
     </head>
     
     <body>
         
         <!-- BEGIN HEADER -->
         
-        <div class="header">
+        <header>
           <div class="nav">
-              <div class="container">
+              <div class="nav_container">
                   <ul class="pull-left">
                       <li><a href="index.html">Home</a></li>
                       <li><a href="introduction.html">Intro To Haskell</a></li>
@@ -33,19 +52,31 @@
           <h2 class="syntax">
               <span class="syntax_main">main</span> <span class="syntax_equals">=</span> putStrLn <span class="syntax_string">"Introduction to Haskell."</span>
           </h2>
-        </div>
+        </header>
         
         <!-- END HEADER -->
         <!-- BEGIN BODY -->
         
-        <div class="container">
+        <div class="content_container">
             <div class="title_container">
                 <h1 class="title">
                     Hello, world.
                 </h1>
             </div>
             <p>
-                test test
+                test test<br>
+                test test<br>
+                test test<br>
+                test test<br>
+                test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>
+                test test<br>
+                test test<br>
+                test test<br>
+                test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>
+                test test<br>
+                test test<br>
+                test test<br>
+                test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>test test<br>
             </p>
         </div>
     </body>

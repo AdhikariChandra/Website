@@ -4,32 +4,56 @@ body {
 
 .nav a {
   color: #ddd;
-  font-size: 11px;
+  font-size: 10pt;
   font-weight: bold;
-  padding: 14px 10px;
+  padding: 12px 10px;
   text-transform: uppercase;
+}
+
+.nav a:hover {
+    background-color: #444;
+    text-decoration: none;
 }
 
 .nav li {
   display: inline;
 }
 
-.header {
+header {
+    width: 100%;
+    height: 220pt;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 	padding:0;
 	background-color: #222;
-	height: 220pt;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
 }
 
-h2 {
-	font-family: "Courier" !important;
-	font-size: 12pt !important;
-	position: absolute;
-	left: 50%;
-	top: 154pt;
-	transform: translateX(-50%);
+header.smaller {
+    height: 75pt;
 }
 
-.logo {
+header.smaller .logo {
+    width: 42pt;
+    height: 42pt;
+    background-image:url('res/img/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 50%;
+    top: 6pt;
+    transform:translateX(-50%);
+}
+
+header .logo {
 	width: 94pt;
 	height: 94pt;
 	background-image:url('res/img/logo.svg');
@@ -40,6 +64,34 @@ h2 {
 	left:50%;
 	top: 60pt;
 	transform:translateX(-50%);
+     -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+header h2 {
+	font-family: "Courier" !important;
+	font-size: 12pt !important;
+	position: absolute;
+	left: 50%;
+	top: 154pt;
+	transform: translateX(-50%);
+     -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+header.smaller h2 {
+    font-family: "Courier" !important;
+	font-size: 12pt !important;
+	position: absolute;
+	left: 50%;
+	top: 36pt;
+	transform: translateX(-50%);
 }
 
 h1 {
@@ -49,10 +101,16 @@ h1 {
 	font-weight:200;
 }
 
-.container {
-	width: 60%;
+.nav_container {
+	width: 80%;
 	margin: auto;
-    padding: 12pt 20pt;
+    padding: 22pt 20pt;
+}
+
+.content_container {
+    width: 60%;
+    margin: auto;
+    padding: 14pt 20pt;
 }
 
 .title_container {
