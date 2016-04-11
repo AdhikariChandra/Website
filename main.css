@@ -2,14 +2,13 @@ body {
 	background-color: #eee;
 }
 
-.nav a {
+header .nav a {
     color: #372a39;
     font-size: 9pt;
     font-weight: bold;
-    padding: 14px 10px;
+    padding: 11pt 10pt;
     text-transform: uppercase;
     position:relative;
-    top:-1pt;
     
     -webkit-transition: all 0.1s;
     -moz-transition: background 0.1s;
@@ -18,16 +17,12 @@ body {
     transition: background 0.1s;
 }
 
-.nav a:hover {
+header .nav a:hover {
     background-color: #eee;
     text-decoration: none;
 }
 
-.nav a:active {
-    background-color: #222;
-}
-
-.nav li {
+header .nav li {
     display: inline;
 }
 
@@ -37,7 +32,7 @@ header .nav_container {
 	width: 100%;
     position: fixed;
     top: 200;
-    padding: 0 36pt;
+    padding: 0 64pt;
     margin: 0;
     
     -webkit-transition: all 0.3s;
@@ -45,10 +40,6 @@ header .nav_container {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-}
-
-header.smaller .nav_container {
-    top: 72pt;
 }
 
 header {
@@ -66,6 +57,10 @@ header {
     -ms-transition: height 0.3s;
     -o-transition: height 0.3s;
     transition: height 0.3s;
+}
+
+header.smaller .nav_container {
+    top: 72pt;
 }
 
 header.smaller {
@@ -124,19 +119,19 @@ header.smaller h2 {
 	top: 36pt;
 }
 
+.content_container {
+    position: relative;
+    top: 182pt;
+    width: 75%;
+    margin: auto;
+    padding: 14pt 20pt;
+}
+
 h1 {
 	font-size: 32pt;
 	color: #ddd;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight:200;
-}
-
-.content_container {
-    position: relative;
-    top: 172pt;
-    width: 60%;
-    margin: auto;
-    padding: 14pt 20pt;
 }
 
 .title_container {

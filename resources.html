@@ -1,46 +1,62 @@
-
 <html>
     <head>
         <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
         <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
         <link rel="stylesheet" href="main.css">
-        <title> Group 7 </title>
+        <title> Resources </title>
+        
+        <!-- JavaScript provided by CallMeNick.com
+        http://callmenick.com/post/animated-resizing-header-on-scroll-->
+        
+        <script src="res/js/classie.js"></script>
+        <script>
+            function init() {
+                window.addEventListener('scroll', function(e){
+                    var distanceY = window.pageYOffset ||       document.documentElement.scrollTop,
+                        shrinkOn = 200,
+                        header = document.querySelector("header");
+                    if (distanceY > shrinkOn) {
+                        classie.add(header,"smaller");
+                    } else {
+                        if (classie.has(header,"smaller")) {
+                            classie.remove(header,"smaller");
+                        }
+                    }
+                });
+            }
+            window.onload = init();
+        </script>
     </head>
     
-    <body>
+    <!-- BEGIN HEADER -->
+    <header>
+        <a href="index.html"><div class="logo"></div></a>
+        <h2 class="syntax">
+            <span class="syntax_main">main</span> <span class="syntax_equals">=</span> putStrLn <span class="syntax_string">"Haskell resources."</span>
+        </h2>
         
-        <!-- BEGIN HEADER -->
-        
-        <div class="header">
+        <div class="nav_container">
             <div class="nav">
-                <div class="nav_container">
-                    <ul class="pull-left">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="introduction.html">Intro To Haskell</a></li>
-                        <li><a href="history.html">History</a></li>
-                        <li><a href="features.html">Haskell's Features</a></li>
-                    </ul>
-                    <ul class="pull-right">
-                        <li><a href="tutorials.html">Tutorials</a></li>
-                        <li><a href="usage.html">Usage</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="reasons.html">Why</a></li>
-                    </ul>
-                </div>
+                <ul class="pull-left">
+                    <li><a href="index.html">Intro To Haskell</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="features.html">Features</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="reasons.html">Why</a></li>
+                    <li><a href="usage.html">Usage</a></li>
+                    <li><a href="tutorials.html">Examples</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
             </div>
-            
-            <div class="logo"></div>
-            <h2 class="syntax">
-                <span class="syntax_main">main</span> <span class="syntax_equals">=</span> putStrLn <span class="syntax_string">"Resources on Haskell."</span>
-            </h2>
         </div>
+    </header>
+    <!-- END HEADER -->
     
-        <!-- END HEADER -->
-        <!-- BEGIN BODY -->
-        
+    <!-- BEGIN BODY -->
+    <body>
         <div class="content_container">
-        <h1 class="intro">Introduction</h1>
-            ;sdlkajsdfafeas;dlkjasf
+
         </div>
     </body>
 </html>
