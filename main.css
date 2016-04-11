@@ -119,23 +119,35 @@ header.smaller h2 {
 	top: 36pt;
 }
 
+.highlighted {
+    background-color: #eee !important;
+}
+
 .content_container {
     position: relative;
     top: 182pt;
     width: 75%;
     margin: auto;
-    padding: 14pt 20pt;
+    padding: 10pt 10pt;
 }
 
 h1 {
-	font-size: 32pt;
-	color: #ddd;
+	font-size: 18pt;
+	color: #372a39;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight:200;
+	font-weight: 400;
 }
 
-.title_container {
-    
+h3 {
+    font-size: 12pt;
+    color: #aaa;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.p_container {
+    padding: 6pt 10pt;
 }
 
 .title {
