@@ -1,37 +1,86 @@
-<!--h1> This is a comment </h1-->
 <html>
-
-  <head>
-    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <head>
+        <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+        <link rel="stylesheet" href="main.css">
+        <title> History of Haskell </title>
+        
+        <!-- JavaScript provided by CallMeNick.com
+        http://callmenick.com/post/animated-resizing-header-on-scroll-->
+        
+        <script src="res/js/classie.js"></script>
+        <script>
+            function init() {
+                window.addEventListener('scroll', function(e){
+                    var distanceY = window.pageYOffset ||       document.documentElement.scrollTop,
+                        shrinkOn = 200,
+                        header = document.querySelector("header");
+                    if (distanceY > shrinkOn) {
+                        classie.add(header,"smaller");
+                    } else {
+                        if (classie.has(header,"smaller")) {
+                            classie.remove(header,"smaller");
+                        }
+                    }
+                });
+            }
+            window.onload = init();
+        </script>
+    </head>
     
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="main.css">
-    <title> Usages </title>
-  </head>
-
-  <body style="color:blue">
-     <article>
-        <header style="color:black">
-	   <h2> Haskell Usage </h2>
-	   <h3> Modern Usage: </h3>
-	     <p> Haskell is used for solving math problems. It is powerful tool for mathematicians.
+    <!-- BEGIN HEADER -->
+    <header>
+        <a href="index.html"><div class="logo"></div></a>
+        <h2 class="syntax">
+            <span class="syntax_main">main</span> <span class="syntax_equals">=</span> putStrLn <span class="syntax_string">"History of Haskell."</span>
+        </h2>
+        
+        <div class="nav_container">
+            <div class="nav">
+                <ul class="pull-left">
+                    <li><a href="index.html">Intro To Haskell</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="features.html">Features</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="reasons.html">Why</a></li>
+                    <li><a href="usage.html" class="highlighted">Usage</a></li>
+                    <li><a href="tutorials.html">Examples</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    
+    
+    <body>
+        
+        <div class="content_container">
+            
+            <h1>Haskell Usage</h1>
+            <h1>Modern Usage:</h1>
+            <p class="p_container">Haskell is used for solving math problems. It is powerful tool for mathematicians.
 	         Following are some of the examples in math area:
 		  -- Finding out the solution to the complex problem
 		  -- Testing some hypothesis
-		  -- Building the mathematics formulae
-	     </p>
-	   <h3> Compiling & Building </h3>
-	     <p> In order to compile the Haskell program you can either run in web browser or you can use the program called GHCI.
+                -- Building the mathematics formulae</p>
+            
+            <h1> Compiling & Building </h1>
+            <p class="p_container"> In order to compile the Haskell program you can either run in web browser or you can use the program called GHCI.
 	         This is the native program for the Haskell language.
-	     </p>
-	   <h3> Running </h3>
-	     <p> In order to compile the Haskell program you can either run in web browser or you can use the program called GHCI.
+            </p>
+            
+            <h1> Running </h1>
+            <p class="p_container"> In order to compile the Haskell program you can either run in web browser or you can use the program called GHCI.
 		 This is the native program for the Haskell language.
-	    </p>
-	    <h3> Other </h3>
-	      <p> In order to compile the Haskell program you can either run in web browser or you can use the program called GHCI.
+            </p>
+            
+            <h1> Other </h1>
+            <p class="p_container"> In order to compile the Haskell program you can either run in web browser or you can use the program called GHCI.
 	          This is the native program for the Haskell language.
-	      </p>
-	</header>
-     </article>
-  </body>
+            </p>
+            
+        </div>
+    </body>
+</html>
