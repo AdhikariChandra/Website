@@ -150,6 +150,27 @@ h3 {
     padding: 6pt 10pt;
 }
 
+.notification {
+    width: auto;
+    height: auto;
+    padding: 4pt 10pt;
+    background-color: #e59400;
+    border-radius: 4pt;
+    color: #fff;
+    border: 1pt solid;
+    border-color: rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.notification a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.notification a:hover {
+    color: #eee;
+}
+
 .title {
 	color: #333 !important;
 	font-size: 20pt !important;

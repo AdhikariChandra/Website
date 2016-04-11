@@ -1,19 +1,65 @@
 <!--h1> This is a comment </h1-->
 <html>
+    <head>
+        <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+        <link rel="stylesheet" href="main.css">
+        <title> Examples </title>
+        
+        <!-- JavaScript provided by CallMeNick.com
+        http://callmenick.com/post/animated-resizing-header-on-scroll-->
+        
+        <script src="res/js/classie.js"></script>
+        <script>
+            function init() {
+                window.addEventListener('scroll', function(e){
+                    var distanceY = window.pageYOffset ||       document.documentElement.scrollTop,
+                        shrinkOn = 200,
+                        header = document.querySelector("header");
+                    if (distanceY > shrinkOn) {
+                        classie.add(header,"smaller");
+                    } else {
+                        if (classie.has(header,"smaller")) {
+                            classie.remove(header,"smaller");
+                        }
+                    }
+                });
+            }
+            window.onload = init();
+        </script>
+    </head>
 
-  <head>
-    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <!-- BEGIN HEADER -->
     
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="main.css">
-    <title> Examples </title>
-  </head>
-
-  <body style="color:red">
-    <div class="nav">
-      <div class="container">
-        <ul class="pull-left">
-          <li><a href="https://www.haskell.org/documentation">Getting Started</a></li>
+    <header>
+        <a href="index.html"><div class="logo"></div></a>
+        <h2 class="syntax">
+            <span class="syntax_main">main</span> <span class="syntax_equals">=</span> putStrLn <span class="syntax_string">"Haskell Examples."</span>
+        </h2>
+        
+        <div class="nav_container">
+            <div class="nav">
+                <ul class="pull-left">
+                    <li><a href="index.html">Intro To Haskell</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="features.html">Features</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="reasons.html">Why</a></li>
+                    <li><a href="usage.html">Usage</a></li>
+                    <li><a href="tutorials.html" class="highlighted">Examples</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <body>
+<!--
+        <div class="nav">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="https://www.haskell.org/documentation">Getting Started</a></li>
 	  <li><a href="https://github.com/CS354-Group7/Examples/blob/master/HelloWorld.hs">Hello World</a></li>
           <li><a href="#">Arithmetic Operations</a></li>
           <li><a href="#">Simple Application</a></li>
@@ -21,5 +67,19 @@
 	  <li><a href="#">Other</a></li>
         </ul>
       </div>
+    </div>
+-->
+        
+    <div class="content_container">
+        
+        <p class="notification">All of the following code snippets can be found on our <a href="https://github.com/CS354-Group7/Examples" target="_blank">GitHub</a>, as well as additional code snippets not shown.</p>
+        
+        <h1>Hello World</h1>
+        <p>The most basic of programs. Hello, world!</p>
+        <script src="https://gist.github.com/nathanielhernandez/3cc9cbaa740e9ef3409f4d556fa56f8c.js"></script>
+        
+        <h1>Arithmetic Operations</h1>
+        
+        <h1>Linked List</h1>
     </div>
    </body>
