@@ -45,6 +45,7 @@ header .nav_container {
 }
 
 header {
+    margin 0;
     width: 100%;
     height: 182pt;
     overflow: hidden;
@@ -131,6 +132,11 @@ header.smaller h2 {
     width: 75%;
     margin: auto;
     padding: 10pt 10pt;
+}
+
+.snippet {
+    width: 90%;
+    margin: auto;
 }
 
 h1 {
