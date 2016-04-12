@@ -1,7 +1,5 @@
 body {
 	background-color: #eee;
-    margin: 0;
-    z-index: 0;
 }
 
 header .nav a {
@@ -166,6 +164,7 @@ h3 {
 
 .p_container {
     padding: 6pt 10pt;
+    margin: 6pt 0;
 }
 
 .notification {
@@ -196,6 +195,15 @@ h3 {
     text-align: center;
     margin: auto;
     padding: 18pt;
+}
+
+.list {
+    width: 80%;
+    margin: auto;
+}
+
+.list li {
+    padding: 2pt;
 }
 
 .detail {
