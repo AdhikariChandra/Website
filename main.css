@@ -84,21 +84,23 @@ header.smaller .logo {
 }
 
 header .logo {
-	width: 94pt;
-	height: 94pt;
+	width: 100pt;
+	height: 70pt;
 	background-image:url('res/img/logo.svg');
-	background-size:contain;
-	background-repeat:no-repeat;
-	background-position:center;
+    background-repeat: no-repeat;
 	position:absolute;
 	left:50%;
-	top: 10pt;
+	top: 25pt;
 	transform:translateX(-50%);
      -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+header .logo a:hover {
+    background: url('res/img/spritesheet.svg');
 }
 
 header h2 {
