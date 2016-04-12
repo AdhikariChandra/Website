@@ -19,6 +19,12 @@ header .nav a {
     transition: background 0.1s;
 }
 
+header .nav {
+    max-width: 800pt;
+    min-width: 500pt;
+    margin: auto;
+}
+
 header .nav a:hover {
     background-color: #eee;
     text-decoration: none;
@@ -134,6 +140,8 @@ header.smaller h2 {
     width: 75%;
     margin: auto;
     padding: 10pt 10pt;
+    max-width: 800pt;
+    min-width: 600pt;
 }
 
 .snippet {
@@ -180,10 +188,18 @@ h3 {
     color: #eee;
 }
 
-.title {
-	color: #333 !important;
-	font-size: 20pt !important;
-    font-weight: 400;
+.intro {
+    font-weight: 100;
+    width: auto;
+    font-size: 36pt;
+	color: #888 !important;
+    text-align: center;
+    margin: auto;
+    padding: 18pt;
+}
+
+.detail {
+    color: #372a39;
 }
 
 .syntax {
