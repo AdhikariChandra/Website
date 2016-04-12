@@ -4,10 +4,10 @@
         <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
         <link rel="stylesheet" href="main.css">
         <title> Usages </title>
-        
+
         <!-- JavaScript provided by CallMeNick.com
         http://callmenick.com/post/animated-resizing-header-on-scroll-->
-        
+
         <script src="res/js/classie.js"></script>
         <script>
             function init() {
@@ -27,14 +27,14 @@
             window.onload = init();
         </script>
     </head>
-    
+
     <!-- BEGIN HEADER -->
     <header>
         <a href="index.html"><div class="logo"></div></a>
         <h2 class="syntax">
             <span class="syntax_main">main</span> <span class="syntax_equals">=</span> putStrLn <span class="syntax_string">"Haskell Usage."</span>
         </h2>
-        
+
         <div class="nav_container">
             <div class="nav">
                 <ul class="pull-left">
@@ -52,12 +52,12 @@
         </div>
     </header>
     <!-- END HEADER -->
-    
-    
+
+
     <body>
-        
+
         <div class="content_container">
-            
+
             <h1>Haskell Usage</h1>
             <h1>Modern Usage:</h1>
             <p class="p_container">Haskell is used for solving math problems. It is powerful tool for mathematicians.
@@ -65,26 +65,64 @@
 		  -- Finding out the solution to the complex problem
 		  -- Testing some hypothesis
                 -- Building the mathematics formulae</p>
-            
-            <h1> Compiling & Building </h1>
-            <p class="p_container"> In order to compile the Haskell program you can either run in web browser or you can use the program called GHCI.
-	        Follow the following steps to compile manually using compiler: "$ ghc -o hello hello.hs". After successful compilation you will see
-		a standalone executable named hello.
-		To run in web browser you can go to <href> this website= http://www.tutorialspoint.com/compile_haskell_online.php </href> then type 
-		your Haskell code. Once you are done typping you can click on compile (located at the top left corner) and then you can click on 
-		execute to execute your compiled code.
-            </p>
-            
-            <h1> Running </h1>
-            <p class="p_container"> In order to compile the Haskell program you can either run in web browser or you can use the program called GHCI.
-		 Follow the following steps to run the compiled executable: "$ ./hello and you will see the Hello, World! printed out.
-            </p>
-            
+
+    <!-- FOR LOOP
+    <h1>Installing Haskell Compiler</h1>
+     <p class="p_container"> In order to install the Haskell comiler, GHCI, simply type $
+     </p>  -->
+    <!-- compiling & building -->
+    <h1>Compiling & Building</h1>
+      <p class="p_container"> In order to compile the Haskell program you can either run in web browser or you can use the compiler called GHC.
+        <br> To compile the source code using Haskell compiler, simply type: <span class="console">$ ghc hello.hs</span> in a console and hit enter.
+		   <br> <br>
+		   To run in web browser you can go to this <a href="http://www.tutorialspoint.com/compile_haskell_online.php" target="_blank">website</a><href>
+		   then type your Haskell code. Once you are done typping, you can click on compile and then execute to execute your program.
+      </p>
+    <!-- running -->
+    <h1> Running </h1>
+      <p class="p_container"> After successful compilation you will see	a standalone executable named hello. To run the compiled executable, simply type:
+        <span class="console">$ ./hello</span> " and hit enter.
+      </p>
+    <!-- Debugging -->
+    <h1> Debugging </h1>
+      <p class="p_container">The debugger in Haskell is called GHCi. This debugger enables dynamic breakpoints and intermediate value observation.
+        <p> &nbsp;&nbsp;&nbsp; Basic steps for debugging following program.<p>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="console">num = sum[1,2,3,4,5] <br></span>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="console">main = print num </span>
+        <ul>
+          <li>Step 1: load the Haskell program into GHCi debugger by typing <span class="console">$ ghci filename.hs</span> </li>
+          <li>Step 2: Set the break point by typing <span class="console">*Main> :break <line number></span> </li>
+          <li>Step 3: Run the program by typing <span class="console">*Main> main <line number></span> </li>
+          <li>Step 3: Single step by typing <span class="console">*Main> :step main <line number></span> </li>
+        </ul>
+      </p>
+    <!-- premitive types -->
+    <h1>Premitive Types</h1>
+	   <p class="p_container"> Following are the premitive types in Haskell. <br>
+          <span class="console">Int</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">char</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">Bool</span>
+          &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">Double</span> &nbsp;&nbsp;&nbsp;&nbsp; <br> <span class="console">Floats</span> &nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="console">Integer</span>
+	   </p>
+      <!-- FOR LOOP -->
+	    <h1>If/Else Statment</h1>
+	     <p class="p_container"> The if else syntax in Haskell is given below. <br>
+         <span class="console">if < condition> then < true-value> else < false-value> </span>
+	     </p>
+      <!-- while loop -->
+      <h1>Recursion</h1>
+	     <p class="p_container"> In order to compile the Haskell program you can either run in web browser or you can use the program called GHCI.
+	         This is the native program for the Haskell language.
+	     </p>
+    </p>
+    <!-- Arrays -->
+    <h1>Arrays in Haskell</h1>
+    <p class="p_container"> Arrays in Haskell is defined in many ways. An example of creating an array would be <span class="console">array :: (Ix a) => (a,a) -> [(a,b)] -> Array a b</span>
+    </p>
             <h1> Other </h1>
             <p class="p_container"> In order to compile the Haskell program you can either run in web browser or you can use the program called GHCI.
 	          This is the native program for the Haskell language.
             </p>
-            
+
         </div>
     </body>
 </html>
