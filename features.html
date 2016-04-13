@@ -82,9 +82,23 @@
             
             <h1 class="intro">Haskell is <span class ="detail">lazy</span>.</h1>
             
-            <p class="p_container">Bla dee bla bla stuff about haskell being lazy.</p>
-            <h1 class="intro">Haskell is <span class="detail">concurrent</span>.</h1>
-            <p class="p_container">Bla dee bla bla stuff about haskell being concurrent.</p>
+            <p class="p_container">
+                Haskell is lazy. This isn't to say Haskell does not work hard, rather Haskell knows when it should work, and perhaps even more importantly, when it shouldn't. Haskell uses <i>lazy evaluation</i>, meaning expressions are not evaluated when bound to variables, but rather are evaluated when they are needed within the program.
+            <br><br>
+                Sometimes called "call-by-need" evaluation, lazy evaluation can help improve efficiency within code, because it is absent of recomputation. Lazy evaluation can also reduce the memory impact a program has upon its environment.
+            <br><br>
+                One example of lazy evaluation within Since functions do not evaluate their arguments, we can implement function
+                
+                
+            </p>
+            <h1 class="intro">Haskell has <span class="detail">concurrency</span>.</h1>
+            
+            <p class="p_container">
+                GHC (Glasgow Haskell Compiler) supports serval types of parallel and concurrent programing from threads and locks to other forms of parallel and concurrent programming such as actors, CSP-style concurrency, nested data parrallelism, and Intel Concurrent Collections.
+                <br><br>
+                Communication between seperate threads can be performed using messages, Haskell variables, and MVar shared state memory. Using concurrency within Haskell is as easy as importing the <span class="console">Control.Concurrent</span> library into your program.</p>
+            
+            <script src="https://gist.github.com/nathanielhernandez/cca7b804d7a17ae635ffb264da0e9807.js"></script>
             
             <h1 class="intro">Haskell is <span class="detail">awesome</span>.</h1>
             
