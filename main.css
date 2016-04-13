@@ -217,9 +217,14 @@ img.curry {
     border-color: #fff;
 }
 
-.border {
-    border: 1pt solid;
-    border-color: rgba(0,0,0,0.1);
+figcaption {
+    display: block;
+    float: right;
+}
+
+img.curry:before {
+    border: 3pt solid;
+    border-color: rgba(0,0,0,0.5);
 }
 
 .list {
