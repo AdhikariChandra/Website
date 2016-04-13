@@ -59,15 +59,26 @@
             <h1 class="intro">Haskell is <span class="detail">purely-functional</span>.</h1>
             
             <p class="p_container">
-                What does it mean for a program to be purely-functional? A purely functional programming language is one that executes its code using expressions, rather than statements which can affect the global state of a program.<br><br>Functional programming uses higher-order functions <span class="detail">first-class</span>, meaning they are treated like any other value and can be passed into other functions, as well as be the resulting return of a function. Functions that take other functions as paramters are called higher-order functions, and are very useful when creating loops, and code refactoring.
+                What does it mean for a program to be purely-functional? A purely functional programming language is one that executes its code using expressions, rather than statements which can affect the global state of a program.<br><br>Functional programming uses <span class="detail">first-class</span> functions, meaning they are treated like any other value and can be passed into other functions as arguments, or be the resulting return of a function. A functions that takes another function (or functions) as parameters are called higher-order functions, and are very useful when creating loops, and code refactoring.
                 <br><br>
-                The following example, provided by <a href="http://www.haskell.org">Haskell's website</a>, demonstrates a higher-order function which subtracts two from every element within a list without using any loops.
+                Because functions in Haskell are pure, they cannot mutate variables. Take the following snippet of code for example. This is a function declaration named <span class="console">square</span> that expects an Integer as an argument, and returns an integer. It does not, however, mutate it's argument nor can it mutate any other values within the program.
             </p>
+            
             <script src="https://gist.github.com/nathanielhernandez/0ac8af9c2698226d94eb832097b59ee6.js"></script>
+            
+            <p class="p_container">
+                Since programs in Haskell allow you to only yield return values, there are no side-effects present. This is unlike functions within imperative languages, which can contain statements that can produce actions outside of return values. Because Haskell's functions produce no side-effects, it is considered to be <i>pure</i>.
+            </p>
             
             <h1 class="intro">Haskell is <span class="detail">statically-typed</span>.</h1>
             
-            <p class="p_container">Bla dee bla bla stuff about haskell being statically typed.</p>
+            <p class="p_container">
+                Within Haskell, all expression types are determined at compile time rather than runtime. Your program will not compile if the correct function argument types are not passed into the funtion. This is of course, similar to program languages such as Java, C, and C++.
+            <br><br>
+                Haskell also has type inference, therefore types do not have to be directly declared when typing is obvious. The following code is identical, however on snippet declares types, where the other infers them.
+            </p>
+            
+            <script src="https://gist.github.com/nathanielhernandez/4cd2c32f32ba35c4b9a4c0b5d2e9cb0d.js"></script>
             
             <h1 class="intro">Haskell is <span class ="detail">lazy</span>.</h1>
             
