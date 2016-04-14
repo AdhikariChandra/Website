@@ -69,17 +69,17 @@
             	<li>Saves a lot of time</li>
             	<li>Strong typing</li>
         	</ul>
-                <p class="p_container">Strong typing means Haskell does not let user to covert Double into an int, or follow a null pointer. This is one of the strong reason why Haskell has very few bug problems. Unlike other strongly typed language types in Haskell are automatically inferred. This means that we are very rarely have to declare the types of our functions, except as a means of code documentation. Haskell will look at how you use the variables and figure out from there what type the variable should be - then it will be type checked to ensure there are no type mismatches.
+                <p class="p_container">Strong typing means Haskell does not let user to covert Double into an int, or follow a null pointer. This is one of the strong reason why Haskell has very few bug problems. Unlike other strongly typed languages, Haskell automatically infer the function or variables type. This means that we rarely have to declare the types of our functions, except as a means of code documentation. Haskell will look at how you have used the variables and it will figure out the types of variable used. It also ensure that there are no type mismatches.
             </p>
 
             <h1>Haskell vs OOP</h1>
             <p class="p_container">
-                The great benefit of OOP is rarely that it allows for great data encapsulation(separating the interface from implementation) and polymorphism(letting a whole set of data types behave the same way). However, Haskell has tools for abstraction of data. We cant really get into it without first going through the module system and how abstract data types(ADT) work in Haskell. Data encapsulation is done in Haskell by declaring each data type in separate module. Polymorphism is done by using something called type classes, If you come from C++ or Java background you might associate classes with something resembling a template for how to construct an object, but that's not what they mean in Haskell.
+                The great benefit of OOP is that it allows for great data encapsulation(separating the interface from implementation) and polymorphism (letting a whole set of data types behave the same way). However, Haskell has tools for abstraction of data. We can't really get into it without first going through the module system and how abstract data types (ADT) work in Haskell. Data encapsulation is done in Haskell by declaring each data type in separate module. Polymorphism is done by using something called type classes. If you come from C++ or Java background you might associate classes with something resembling a template for how to construct an object, but that's not what they mean in Haskell.
             </p>
 
             <h1>Limitation of Haskell that can be solved</h1>
     	    <p class="p_container">
-                Like every other language Haskell is also not 100% efficient. It has many great features whereas some drawbacks. Some of them that are generally mentioned are:
+                Like every other language, Haskell is also not 100% efficient. It has many great features and some drawbacks. Some of the drawbacks that are generally mentioned includes:
         	<ul>
         	    <li>Namespace clash</li>
         	    <li>Template Haskell re-loading</li>
