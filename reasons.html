@@ -54,20 +54,39 @@
     <!-- END HEADER -->
     
     <!-- BEGIN BODY -->
-    <body>
+   <body>
         <div class="content_container">
-	<h1>Pure-Functional Language</h1>
-	<p class="p_container">Unlike some other functional programming language Haskell is pure. Meaning, it doesnot allow any side-effects. A side effect would mean that evaluating an expression changes some internal state that would later cause evaluating the same expression to have a different result. In a pure functional language we can evaluate the same expression as many times with the same arguments, and it would always return the same value, because there is no state change. Because functional language are more intuitive and offer more and easier ways to get the job done, functional programming tend to be shorter. 
+                <h1>Why use Haskell?</h1>
+                <p class="p_container">
+ Functional language are more intuitive and offer more and easier ways to get the job done, functional programs tend to be shorter(usually between 2 to 10 times shorter). Writing large software systems that work is difficult and expensive to maintain. The compiler system is really good at preventing from making a mistakes. Unlike other language in Haskell we have to deal with less implementation errors in code due to its immutable feature. Some of the general things that Haskell offers you are:
+        <ul>
+        <li>Substantial increase in productivity<line number></span></li>
+        <li>Strong and strict compiler<line number></span></li>
+        <li>Shorter, cleaner and more maintainable code<line number></span></li>
+        <li>Few errors, high reliability<line number></span></li>
+        <li>Saves a lot of time<line number></span></li> </p>
         </div>
 
-	<div class="content_container">
-	<h1>Lazy Programming Language</h1>
-	<p class="p_container">Haskell is called lazy programming language because of it's lazy evluation nature. Lazy evaluation is also know by the name of call-by-need. Lazy evaluation means the evalution technique which delays the evalution of an expression untill its vallue is needed.
-	</div>
-	<div class="content_container">
-	<h1>Strong typing</h1>
-	<p class="p_container">Strong typing means Haskell doesnot let user to covert Double into an int, or follow a null pointer. This is one of the strong reason why Haskell has very few bug problems.
+        <div class="content_container">
+        <h1>Strong typing</h1>
+        <p class="p_container">Strong typing means Haskell does not let user to covert Double into an int, or follow a null pointer. This is one of the strong reason why Haskell has very few bug problems.
 Unlike other strongly typed language types in Haskell are automatically inferred. This means that we are very rarely have to declare the types of our functions, except as a means of code documentation. Haskell will look at how you use the variables and figure out from there what type the variable should be - then it will be type checked to ensure there are no type mismatches.
-	</div> 	
+        </div>
+
+        <div class="content_container">
+        <h1>Haskell vs OOP</h1>
+        <p class="p_container">
+        The great benefit of OOP is rarely that it allows for great data encapsulation(separating the interface from implementation) and polymorphism(letting a whole set of data types behave the same way). However, Haskell has tools for abstraction of data. We cant really get into it without first going through the module system and how abstract data types(ADT) work in Haskell. Data encapsulation is done in Haskell by declaring each data type in separate module. Polymorphism is done by using something called type classes, If you come from C++ or Java background you might associate classes with something resembling a template for how to construct an object, but that's not what they mean in Haskell.
+        </div>
+        <div class="content_container">
+        <h1>Limitation of Haskell that can be solved</h1>
+        <p class="p_container">Like every other language Haskell is also not 100% efficient. It has many great features whereas some drawbacks. Some of them that are generally mentioned are:</p>
+        <li>Namespace clash<line number></span></li>
+        <li>Template Haskell re-loading<line number></span></li>
+        <li>No stack traces<line number></span></li>
+        <li>Code reloading<line number></span></li>
+        <li>Error message from the complex types<line number></span></li> </p>
+        </div>
     </body>
 </html>
+                                                  
