@@ -64,7 +64,7 @@
             <p class="p_container">
                 What does it mean for a program to be purely-functional? A purely functional programming language is one that executes its code using expressions, rather than statements which can affect the global state of a program.<br><br>Functionalc programming uses <span class="detail">first-class</span> functions, meaning they are treated like any other value and can be passed into other functions as arguments, or be the resulting return of a function. A functions that takes another function (or functions) as parameters are called higher-order functions, and are very useful when creating loops, and code refactoring.
                 <br><br>
-                Because functions in Haskell are pure, they cannot mutate variables. Take the following snippet of code for example. This is a function declaration named <span class="console">square</span> that expects an Integer as an argument, and returns an integer. It does not, however, mutate it's argument nor can it mutate any other values within the program.
+                Because functions in Haskell are pure, they cannot mutate variables. Take the following snippet of code for example. This is a function declaration named <span class="console">square</span> that expects an Integer as an argument, and returns an integer. It does not, however, mutate its argument nor can it mutate any other values within the program.
             </p>
             
             <script src="https://gist.github.com/nathanielhernandez/0ac8af9c2698226d94eb832097b59ee6.js"></script>
@@ -76,7 +76,7 @@
             <h1 class="intro">Haskell is <span class="detail">statically-typed</span>.</h1>
             
             <p class="p_container">
-                Within Haskell, all expression types are determined at compile time rather than runtime. Your program will not compile if the correct function argument types are not passed into the funtion. This is of course, similar to program languages such as Java, C, and C++.
+                Within Haskell, all expression types are determined at compile time rather than runtime. Your program will not compile if the correct function argument types are not passed into the function. This is of course, similar to program languages such as Java, C, and C++.
             <br><br>
                 Haskell also has type inference, therefore types do not have to be directly declared when typing is obvious. The following code is identical, however on snippet declares types, where the other infers them.
             </p>
@@ -88,7 +88,7 @@
             <p class="p_container">
                 Haskell is lazy. This isn't to say Haskell does not work hard, rather Haskell knows when it should work, and perhaps even more importantly, when it shouldn't. Haskell uses <i>lazy evaluation</i>, meaning expressions are not evaluated when bound to variables, but rather are evaluated when they are needed within the program.
             <br><br>
-                Sometimes called "call-by-need" evaluation, lazy can be advantageous, as you may not always evaluate the syntax tree if an expression is not needed. This also allows for the evaulation of an infinite syntax tree (and in turn, infinite data structures), because lazy evaluation will evaluate the syntax tree as needed. <br><br>However, lazy evaluation does have its disadvantages. It's memory management can be unpredictable, and because expressions are evaluated by need, there has to be a record of whether an expression has been evaluated, and whether subsequent expressions have been evaluated. This can affect the performance of lazy program languages.
+                Sometimes called "call-by-need" evaluation, lazy can be advantageous, as you may not always evaluate the syntax tree if an expression is not needed. This also allows for the evaluation of an infinite syntax tree (and in turn, infinite data structures), because lazy evaluation will evaluate the syntax tree as needed. <br><br>However, lazy evaluation does have its disadvantages. It's memory management can be unpredictable, and because expressions are evaluated by need, there has to be a record of whether an expression has been evaluated, and whether subsequent expressions have been evaluated. This can affect the performance of lazy program languages.
             <br><br>
                 The following is a simple example of an infinite list that can be created within Haskell.
                 <script src="https://gist.github.com/nathanielhernandez/91ae23404c5f980d73b4407cb7d820f0.js"></script>
@@ -99,7 +99,7 @@
             
             <p class="p_container">
                 Concurrency is enabled by default with Haskell, however, by importing the <span class="console">Control.Concurrent</span> library, developers are given access to the ability to forking and kill new threads, sleep, and other concurrent functions.
-                GHC (Glasgow Haskell Compiler) supports serval types of parallel and concurrent programing from threads and locks to other forms of parallel and concurrent programming such as actors, CSP-style concurrency, nested data parrallelism, and Intel Concurrent Collections.
+                GHC (Glasgow Haskell Compiler) supports several types of parallel and concurrent programing from threads and locks to other forms of parallel and concurrent programming such as actors, CSP-style concurrency, nested data parallelism, and Intel Concurrent Collections.
                 </p>
             
             <script src="https://gist.github.com/nathanielhernandez/cca7b804d7a17ae635ffb264da0e9807.js"></script>
