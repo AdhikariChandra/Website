@@ -91,15 +91,15 @@
           <li>Step 1: load the Haskell program into GHCi debugger by typing <span class="console">$ ghci filename.hs</span> </li>
           <li>Step 2: Set the break point by typing <span class="console">*Main> :break <line number></span> </li>
           <li>Step 3: Run the program by typing <span class="console">*Main> main <line number></span> </li>
-          <li>Step 3: Single step by typing <span class="console">*Main> :step main <line number></span> </li>
+          <li>Step 4: Single step by typing <span class="console">*Main> :step main <line number></span> </li>
         </ul>
       </p>
     <!-- premitive types -->
     <h1>Premitive Types</h1>
 	   <p class="p_container"> Following are the premitive types in Haskell. <br>
           <span class="console">Int</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">char</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">Bool</span>
-          &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">Double</span> &nbsp;&nbsp;&nbsp;&nbsp; <br> <span class="console">Float</span> &nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="console">Integer</span> &nbsp;&nbsp;&nbsp;&nbsp; <br> <span class="console">String</span>
+          &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">Double</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">Float</span> &nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="console">Integer</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">String</span>
 	   </p>
       <!-- FOR LOOP -->
 	    <h1>If/Else Statment</h1>
@@ -110,16 +110,16 @@
       <h1>List</h1>
 	     <p class="p_container"> Lists in Haskell are a homogeneous data structure meaning it stores sereval elements of the same type. If the elements
          of a list can be compared than the list can be compared using &#60;, &#60;=, &#62;,and &#62;= and they are compared in lexicographical order.
-         <p>List concatenate syntax: <span class="console">[list1] ++ [list2]</span> </p>
-         <p>Syntax to retrive an element from a list using index: <span class="console">[1,2,3,4,5,6] !! 3</span> </p>. This returns number 4 located at 3rd index.
-         <p>In Haskell, you can simply type <span class="console">head</span>, <span class="console">tail</span>, <span class="console">length</span>,
+         <p>&nbsp;&nbsp;&nbsp;List concatenate syntax: <span class="console">[list1] ++ [list2]</span> </p>
+         <p>&nbsp;&nbsp;&nbsp;Syntax to retrive an element from a list using index: <span class="console">[1,2,3,4,5,6] !! 3</span>. This returns number 4 located at 3rd index. </p>
+         <p>&nbsp;&nbsp;&nbsp;In Haskell, you can simply type <span class="console">head</span>, <span class="console">tail</span>, <span class="console">length</span>,
            <span class="console">reverse</span>, <span class="console">last</span>, <span class="console">take</span>, <span class="console">drop</span>,
            <span class="console">minimum</span>, <span class="console">maximum</span>, <span class="console">sum</span>, <span class="console">product</span>,
-           or <span class="console">null</span> infront of a list to get the correct result. For example, <span class="console">$ reverse [1,2,3,4,5]</span>
+           or <span class="console">null</span> &nbsp;&nbsp;&nbsp;infront of a list to get the correct result. For example, <span class="console">$ reverse [1,2,3,4,5]</span>
            will print <span class="console">[5,4,3,2,1]</span>. </p>
     </p>
     <!-- Arrays -->
-    <h1>Arrays in Haskell</h1>
+    <h1>Arrays</h1>
     <p class="p_container"> Arrays in Haskell is defined in many ways. An example of creating an array would be <span class="console">array :: (Ix a) => (a,a) -> [(a,b)] -> Array a b</span>
     </p>
 
@@ -129,9 +129,11 @@
        Similarly, <span class="console">$ fst (12, 15)</span> will print <span class="console">12</span> and <span class="console">$ snd ("WOW", True)</span> will print <span class="console">True</span>.
      </p>
 
-    <h1> Other </h1>
-     <p class="p_container"> In order to compile the Haskell program you can either run in web browser or you can use the program called GHCI.
-	    This is the native program for the Haskell language.
+    <h1>Threads</h1>
+     <p class="p_container"> Threads in Haskell is same as memory management in C or garbage collector in Java meaning the garbage
+       collection in Java, mallocing in C happens in the background. GHC, Haskell compiler, takes the source code and it optimize the
+       code. During optimization procedure, the compiler decides where the code should be converted to parallel, concurrent, or nothing else.
+       All this procedure happens underr the hood meaning we as a programmar cannot see what happened.
      </p>
 
         </div>
