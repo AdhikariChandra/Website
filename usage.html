@@ -54,30 +54,19 @@
             </div>
         </div>
     </header>
+    
     <!-- END HEADER -->
-
 
     <body>
         <div class="content_container">
             <h1 class="intro">Haskell <span class="detail">Usage</span></h1>
-            <h1>Modern Usage:</h1>
-            <p class="p_container">Haskell is used for solving math problems. It is powerful tool for mathematicians.
-	         Following are some of the examples in math area:
-		  -- Finding out the solution to the complex problem
-		  -- Testing some hypothesis
-                -- Building the mathematics formulae</p>
-
-    <!-- FOR LOOP
-    <h1>Installing Haskell Compiler</h1>
-     <p class="p_container"> In order to install the Haskell comiler, GHCI, simply type $
-     </p>  -->
     <!-- compiling & building -->
     <h1>Compiling & Building</h1>
       <p class="p_container"> In order to compile the Haskell program you can either run in web browser or you can use the compiler called GHC.
         <br> To compile the source code using Haskell compiler, simply type: <span class="console">$ ghc hello.hs</span> in a console and hit enter.
 		   <br> <br>
 		   To run in web browser you can go to this <a href="http://www.tutorialspoint.com/compile_haskell_online.php" target="_blank">website</a><href>
-		   then type your Haskell code. Once you are done typping, you can click on compile and then execute to execute your program.
+		   then type your Haskell code. Once you are done typing, you can click on compile and then execute to execute your program.
       </p>
     <!-- running -->
     <h1> Running </h1>
@@ -86,13 +75,10 @@
       </p>
     <!-- Debugging -->
     <h1> Debugging </h1>
-      <p class="p_container">The debugger in Haskell is called GHCi. This debugger enables dynamic breakpoints and intermediate value observation.<br><br>
+      <p class="p_container">The debugger in Haskell is called GHCi. This debugger enables dynamic break points and intermediate value observation.<br><br>
          Basic steps for debugging following program.<br><br>
-          <span class="console">num = sum[1,2,3,4,5]</span>
+          <span class="console">num = sum[1,2,3,4,5]</span><br>
           <span class="console">main = print num </span>
-        <ul>
-          <li>Step 1: load the Haskell program into GHCi debugger by typing  <span class="console">$ ghci filename.hs</span> </li>
-          <li>Step 2: Set the break point by typing  <span class="console">*Main> :break <line number></span> </li>
         <ul>
           <li>Step 1: load the Haskell program into GHCi debugger by typing  <span class="console">$ ghci filename.hs</span> </li>
           <li>Step 2: Set the break point by typing  <span class="console">*Main> :break <line number></span> </li>
@@ -101,8 +87,8 @@
         </ul>
       </p>
     <!-- premitive types -->
-    <h1>Premitive Types</h1>
-	   <p class="p_container"> Following are the premitive types in Haskell:<br><br>
+    <h1>Primitive Types</h1>
+	   <p class="p_container"> Following are the primitive types in Haskell:<br><br>
           <span class="console">Int</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="console">char</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">Bool</span>
           &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">Double</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">Float</span> &nbsp;&nbsp;&nbsp;&nbsp;
           <span class="console">Integer</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">String</span>
@@ -114,15 +100,15 @@
 	     </p>
       <!-- while loop -->
       <h1>List</h1>
-	     <p class="p_container"> Lists in Haskell are a homogeneous data structure meaning it stores sereval elements of the same type. If the elements
+	     <p class="p_container"> Lists in Haskell are a homogeneous data structure meaning it stores several elements of the same type. If the elements
          of a list can be compared than the list can be compared using &#60;, &#60;=, &#62;,and &#62;= and they are compared in lexicographical order.
 		<br><br>List concatenate syntax: <br> <span class="console">[list1] ++ [list2]</span>
-         <br><br>Syntax to retrive an element from a list using index:<br><span class="console">[1,2,3,4,5,6] !! 3</span>.<br><br>
+         <br><br>Syntax to retrieve an element from a list using index:<br><span class="console">[1,2,3,4,5,6] !! 3</span>.<br><br>
 	This returns number 4 located at 3rd index.
          In Haskell, you can simply type <span class="console">head</span>, <span class="console">tail</span>, <span class="console">length</span>,
            <span class="console">reverse</span>, <span class="console">last</span>, <span class="console">take</span>, <span class="console">drop</span>,
            <span class="console">minimum</span>, <span class="console">maximum</span>, <span class="console">sum</span>, <span class="console">product</span>,
-           or <span class="console">null</span> infront of a list to get the correct result.<br><br>For example,<br><span class="console">$ reverse [1,2,3,4,5]</span><br>
+           or <span class="console">null</span> in front of a list to get the correct result.<br><br>For example,<br><span class="console">$ reverse [1,2,3,4,5]</span><br>
            <br>will print<br> <span class="console">[5,4,3,2,1]</span>. </p>
     </p>
     <!-- Arrays -->
@@ -140,11 +126,11 @@
      <p class="p_container"> Threads in Haskell is same as memory management in C or garbage collector in Java meaning the garbage
        collection in Java, mallocing in C happens in the background. GHC, Haskell compiler, takes the source code and it optimize the
        code. During optimization procedure, the compiler decides where the code should be converted to parallel, concurrent, or nothing else.
-       All this procedure happens underr the hood meaning we as a programmar cannot see what happened.
+       All this procedure happens under the hood meaning we as a programmer cannot see what happened.
      </p>
      <h1>Importing Files</h1>
       <p class="p_container">In Haskell, importing other files can be done using following lines of code. This is similar to extends in Java
-        and should be place at the top of the file. <span class="console">module Filename where <br> import filename</span>
+        and should be place at the top of the file. <span class="console"><br>module Filename where <br> import filename</span>
       </p>
         </div>
     </body>
