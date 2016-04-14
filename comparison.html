@@ -40,13 +40,13 @@
         <div class="nav_container">
             <div class="nav">
                 <ul class="pull-left">
-                    <li><a href="index.html" class="highlighted">Intro To Haskell</a></li>
+                    <li><a href="index.html">Intro To Haskell</a></li>
                     <li><a href="history.html">History</a></li>
                     <li><a href="features.html">Features</a></li>
                     <li><a href="reasons.html">Why</a></li>
                 </ul>
                 <ul class="pull-right">
-                    <li><a href="comparison.html">Comparisons</a></li>
+                    <li><a href="comparison.html" class="highlighted">Comparisons</a></li>
                     <li><a href="usage.html">Usage</a></li>
                     <li><a href="tutorials.html">Examples</a></li>
                     <li><a href="resources.html">Resources</a></li>
@@ -59,23 +59,40 @@
     <!-- BEGIN BODY -->
     <body>
         <div class="content_container">
-            <p class="intro">
-                Haskell is a <span class="detail">purely-functional</span>, <br><span class="detail">statically typed</span>, <span class="detail">lazy</span> programming language.</p>
-            <p class="p_container">
-                Hello, world! Our names are Chandra Adhikari, Utsav Roy, and Nathaniel Hernandez, and we're  Group 7. We're here to introduce you to the wonderful programming language named Haskell.
-                <br><br>
-                Haskell was introduced in 1990 and was one of many purely-functional programming languages originating at the time. Haskell was designed with five goals in mind:
-            </p>
-                <ul class="list">
-                    <li>It should be suitable for teaching, research, and applications, including building large systems</li>
-                    <li>It should be completely described via the publication of a formal syntax and semantics.</li>
-                    <li>It should be freely available. Anyone should be permitted to implement the language and distribute it to whomever they please</li>
-                    <li>It should be based on ideas that enjoy a wide consensus</li>
-                    <li>It should reduce unnecessary diversity in functional programming languages</li>
-                </ul>
-            <p class="p_container">
-                Since its origins, Haskell has been implemented widely across several mediums. Several companies use Haskell commercially such as AT&T, who uses Haskell within their Network Security division to automate processing internet abuse complaints, Microsoft, who uses Haskell for the production of their serialization system named Bond, and even the New York Times, who used Haskell to process images from the 2013 New York Fashion Week using Haskell's parallel array library, due to its fast numerical arrays packages.
-            </p>
+                        <table style="width:100%">
+      <tr>
+        <th>Haskell</th>
+        <th>Java</th>
+      </tr>
+      <tr>
+       <td>Pure functional language</td>
+       <td>OO/Imperative programming</td>
+      </tr>
+    <tr>
+      <td>Variable type declaration is not needed</td>
+      <td>variable type declaration is needed</td>
+    </tr>
+  <tr>
+    <td>Variables are immutable</td>
+    <td>Variables are mutable</td>
+  </tr>
+  <tr>
+    <td>Uses recursion to implement loops</td>
+    <td>loop functionality is present</td>
+  </tr>
+  <tr>
+    <td>The compiler decides whether to choose concurent, parallel, threads, or no threads when optimizing</td>
+    <td>Programmer decides what they want</td>
+  </tr>
+  <tr>
+    <td>Function declaration syntax: foo :: Int -> Int</td>
+    <td>Function declaration syntax: public int foo(int i){ }</td>
+  </tr>
+  <tr>
+    <td>Function declaration syntax: foo :: Int -> Int</td>
+    <td>Function declaration syntax: public int foo(int i){ }</td>
+  </tr>
+</table>
         </div>
     </body>
 
