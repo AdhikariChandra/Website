@@ -92,6 +92,9 @@
         <ul>
           <li>Step 1: load the Haskell program into GHCi debugger by typing  <span class="console">$ ghci filename.hs</span> </li>
           <li>Step 2: Set the break point by typing  <span class="console">*Main> :break <line number></span> </li>
+        <ul>
+          <li>Step 1: load the Haskell program into GHCi debugger by typing  <span class="console">$ ghci filename.hs</span> </li>
+          <li>Step 2: Set the break point by typing  <span class="console">*Main> :break <line number></span> </li>
           <li>Step 3: Run the program by typing  <span class="console">*Main> main <line number></span> </li>
           <li>Step 4: Single step by typing  <span class="console">*Main> :step main <line number></span> </li>
         </ul>
@@ -138,7 +141,12 @@
        code. During optimization procedure, the compiler decides where the code should be converted to parallel, concurrent, or nothing else.
        All this procedure happens underr the hood meaning we as a programmar cannot see what happened.
      </p>
-
+     <h1>Importing Files</h1>
+      <p class="p_container">In Haskell, importing other files can be done using following lines of code. This is similar to extends in Java
+        and should be place at the top of the file. <span class="console">module Filename where <br> import filename</span>
+      </p>
+        </div>
+    </body>
         </div>
     </body>
 </html>
