@@ -150,14 +150,14 @@ header.smaller h2 {
 h1 {
 	font-size: 18pt;
 	color: #372a39;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 400;
 }
 
 h3 {
     font-size: 12pt;
     color: #aaa;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 400;
     text-align: center;
 }
@@ -188,6 +188,7 @@ h3 {
 }
 
 .intro {
+    font-family: 'Alegreya Sans', sans-serif;
     font-weight: 100;
     width: auto;
     font-size: 36pt;
@@ -206,6 +207,24 @@ h3 {
     border: 1pt solid;
     border-color: rgba(0,0,0,0.1);
     margin: 2pt 0;
+}
+
+img.curry {
+    width: 140pt;
+    float: right;
+    margin: 10pt;
+    border: 4pt solid;
+    border-color: #fff;
+}
+
+figcaption {
+    display: block;
+    float: right;
+}
+
+img.curry:before {
+    border: 3pt solid;
+    border-color: rgba(0,0,0,0.5);
 }
 
 .list {
