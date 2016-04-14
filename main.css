@@ -57,7 +57,8 @@ header {
     left: 0;
     z-index: 998;
 	padding:0;
-    background-color: #372a39;
+/*    background-color: #372a39;*/
+    background-color: #39004d;
 
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
