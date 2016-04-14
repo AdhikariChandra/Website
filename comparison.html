@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="main.css">
         <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100italic,400,400italic' rel='stylesheet' type='text/css'>
 
-        <title> Welcome to Haskell </title>
+        <title> Comparisons </title>
         
         <!-- JavaScript provided by CallMeNick.com
         http://callmenick.com/post/animated-resizing-header-on-scroll-->
@@ -34,7 +34,7 @@
     <header>
         <a href="index.html"><div class="logo"></div></a>
         <h2 class="syntax">
-            <span class="syntax_main">main</span> <span class="syntax_equals">=</span> putStrLn <span class="syntax_string">"Welcome to Haskell."</span>
+            <span class="syntax_main">main</span> <span class="syntax_equals">=</span> putStrLn <span class="syntax_string">"Comparisons."</span>
         </h2>
         
         <div class="nav_container">
@@ -59,40 +59,49 @@
     <!-- BEGIN BODY -->
     <body>
         <div class="content_container">
-                        <table style="width:100%">
-      <tr>
-        <th>Haskell</th>
-        <th>Java</th>
-      </tr>
-      <tr>
-       <td>Pure functional language</td>
-       <td>OO/Imperative programming</td>
-      </tr>
-    <tr>
-      <td>Variable type declaration is not needed</td>
-      <td>variable type declaration is needed</td>
-    </tr>
-  <tr>
-    <td>Variables are immutable</td>
-    <td>Variables are mutable</td>
-  </tr>
-  <tr>
-    <td>Uses recursion to implement loops</td>
-    <td>loop functionality is present</td>
-  </tr>
-  <tr>
-    <td>The compiler decides whether to choose concurent, parallel, threads, or no threads when optimizing</td>
-    <td>Programmer decides what they want</td>
-  </tr>
-  <tr>
-    <td>Function declaration syntax: foo :: Int -> Int</td>
-    <td>Function declaration syntax: public int foo(int i){ }</td>
-  </tr>
-  <tr>
-    <td>Function declaration syntax: foo :: Int -> Int</td>
-    <td>Function declaration syntax: public int foo(int i){ }</td>
-  </tr>
-</table>
+            <h1 class="intro">Haskell <span class="detail">vs.</span> Java</h1>
+            <table style="width:100%">
+                <tr>
+                    <th>Haskell</th>
+                    <th>Java</th>
+                </tr>
+                <tr>
+                    <td>Produces more memory management due to immutable variables. Garbage is collected using the Glasgow Haskell Compiler (GHC).</td>
+                    <td>Java Objects reside within the heap, garbage is collected using the JVM when the heap has reached its capacity.</td>
+                </tr>
+                <tr>
+                    <td>Using the Monad mathematical foundation. All I/O actions return a value tagged with the 'IO' type to keep it I/O values seperate from other values, increasing the purity of the language.</td>
+                    <td>Uses I/O streams to determine input or output destination. Streams can support several different kinds of data types.</td>
+                </tr>
+                <tr>
+                    <td>Purely-functional language</td>
+                    <td>OO/Imperative language</td>
+                </tr>
+                <tr>
+                    <td>Type inference</td>
+                    <td>Type declaration required</td>
+                </tr>
+                <tr>
+                    <td>Variables are immutable</td>
+                    <td>Variables are mutable</td>
+                </tr>
+                <tr>
+                    <td>Uses recursion to implement loops</td>
+                    <td>loop functionality is present</td>
+                </tr>
+                <tr>
+                    <td>The compiler decides whether to choose concurent, parallel, threads, or no threads when optimizing</td>
+                    <td>Programmer decides what they want</td>
+                </tr>
+                <tr>
+                    <td>Function declaration syntax: <span class="console">foo :: Int -> Int</span></td>
+                    <td>Function declaration syntax: <span class="console">public int foo(int i){ }</span></td>
+                </tr>
+                <tr>
+                    <td>Function declaration syntax: foo :: Int -> Int</td>
+                    <td>Function declaration syntax: public int foo(int i){ }</td>
+                </tr>
+            </table>
         </div>
     </body>
 
