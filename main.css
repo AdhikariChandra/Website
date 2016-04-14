@@ -256,3 +256,27 @@ img.curry:before {
 .syntax_string {
 	color: #ccff66;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1pt solid;
+    border-color: rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12pt;
+}
+
+th {
+    background-color: #e59400;
+    color: #fff;
+}
+
+tr {
+    background-color: #fff;
+}
+
+tr:nth-child(odd) {background-color: #f2f2f2}
