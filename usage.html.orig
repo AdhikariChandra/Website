@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+        <link rel="stylesheet" href="main.css">
+        <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100italic,400,400italic' rel='stylesheet' type='text/css'>
+
+        <title> Usages </title>
+
+        <!-- JavaScript provided by CallMeNick.com
+        http://callmenick.com/post/animated-resizing-header-on-scroll-->
+
+        <script src="res/js/classie.js"></script>
+        <script>
+            function init() {
+                window.addEventListener('scroll', function(e){
+                    var distanceY = window.pageYOffset ||       document.documentElement.scrollTop,
+                        shrinkOn = 200,
+                        header = document.querySelector("header");
+                    if (distanceY > shrinkOn) {
+                        classie.add(header,"smaller");
+                    } else {
+                        if (classie.has(header,"smaller")) {
+                            classie.remove(header,"smaller");
+                        }
+                    }
+                });
+            }
+            window.onload = init();
+        </script>
+    </head>
+
+    <!-- BEGIN HEADER -->
+    <header>
+        <a href="index.html"><div class="logo"></div></a>
+        <h2 class="syntax">
+            <span class="syntax_main">main</span> <span class="syntax_equals">=</span> putStrLn <span class="syntax_string">"Haskell Usage."</span>
+        </h2>
+
+        <div class="nav_container">
+            <div class="nav">
+                <ul class="pull-left">
+                    <li><a href="index.html">Intro To Haskell</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="features.html">Features</a></li>
+                </ul>
+                <ul class="pull-right">
+                    <li><a href="reasons.html">Why</a></li>
+                    <li><a href="usage.html" class="highlighted">Usage</a></li>
+                    <li><a href="tutorials.html">Examples</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+
+    <body>
+        <div class="content_container">
+            <h1 class="intro">Haskell <span class="detail">Usage</span></h1>
+            <h1>Modern Usage:</h1>
+            <p class="p_container">Haskell is used for solving math problems. It is powerful tool for mathematicians.
+	         Following are some of the examples in math area:
+		  -- Finding out the solution to the complex problem
+		  -- Testing some hypothesis
+                -- Building the mathematics formulae</p>
+
+    <!-- FOR LOOP
+    <h1>Installing Haskell Compiler</h1>
+     <p class="p_container"> In order to install the Haskell comiler, GHCI, simply type $
+     </p>  -->
+    <!-- compiling & building -->
+    <h1>Compiling & Building</h1>
+      <p class="p_container"> In order to compile the Haskell program you can either run in web browser or you can use the compiler called GHC.
+        <br> To compile the source code using Haskell compiler, simply type: <span class="console">$ ghc hello.hs</span> in a console and hit enter.
+		   <br> <br>
+		   To run in web browser you can go to this <a href="http://www.tutorialspoint.com/compile_haskell_online.php" target="_blank">website</a><href>
+		   then type your Haskell code. Once you are done typping, you can click on compile and then execute to execute your program.
+      </p>
+    <!-- running -->
+    <h1> Running </h1>
+      <p class="p_container"> After successful compilation you will see	a standalone executable named hello. To run the compiled executable, simply type:
+        <span class="console">$ ./hello</span> " and hit enter.
+      </p>
+    <!-- Debugging -->
+    <h1> Debugging </h1>
+<<<<<<< HEAD
+      <p class="p_container">The debugger in Haskell is called GHCi. This debugger enables dynamic breakpoints and intermediate value observation.<br><br>
+         Basic steps for debugging following program.<br><br>
+          <span class="console">num = sum[1,2,3,4,5]</span>
+          <span class="console">main = print num </span>
+=======
+      <p class="p_container">The debugger in Haskell is called GHCi. This debugger enables dynamic breakpoints and intermediate value observation.
+        <p> &nbsp;&nbsp;&nbsp; Basic steps for debugging following program.<p>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="console">num = sum[1,2,3,4,5]</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="console">main = print num </span>
+>>>>>>> 668464cbc318f02e35d8f8640181fe7d6470c25b
+        <ul>
+          <li>Step 1: load the Haskell program into GHCi debugger by typing  <span class="console">$ ghci filename.hs</span> </li>
+          <li>Step 2: Set the break point by typing  <span class="console">*Main> :break <line number></span> </li>
+          <li>Step 3: Run the program by typing  <span class="console">*Main> main <line number></span> </li>
+          <li>Step 4: Single step by typing  <span class="console">*Main> :step main <line number></span> </li>
+        </ul>
+      </p>
+    <!-- premitive types -->
+    <h1>Premitive Types</h1>
+	   <p class="p_container"> Following are the premitive types in Haskell:<br><br>
+          <span class="console">Int</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="console">char</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">Bool</span>
+          &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">Double</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">Float</span> &nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="console">Integer</span> &nbsp;&nbsp;&nbsp;&nbsp; <span class="console">String</span>
+	   </p>
+      <!-- FOR LOOP -->
+	    <h1>If/Else Statment</h1>
+	     <p class="p_container"> The if else syntax in Haskell is given below. <br><br>
+         <span class="console">if &#60;condition> then &#60;true-value> else &#60;false-value> </span>
+	     </p>
+      <!-- while loop -->
+      <h1>List</h1>
+	     <p class="p_container"> Lists in Haskell are a homogeneous data structure meaning it stores sereval elements of the same type. If the elements
+         of a list can be compared than the list can be compared using &#60;, &#60;=, &#62;,and &#62;= and they are compared in lexicographical order.
+		<br><br>List concatenate syntax: <br> <span class="console">[list1] ++ [list2]</span>
+         <br><br>Syntax to retrive an element from a list using index:<br><span class="console">[1,2,3,4,5,6] !! 3</span>.<br><br>
+	This returns number 4 located at 3rd index.
+         In Haskell, you can simply type <span class="console">head</span>, <span class="console">tail</span>, <span class="console">length</span>,
+           <span class="console">reverse</span>, <span class="console">last</span>, <span class="console">take</span>, <span class="console">drop</span>,
+           <span class="console">minimum</span>, <span class="console">maximum</span>, <span class="console">sum</span>, <span class="console">product</span>,
+           or <span class="console">null</span> infront of a list to get the correct result.<br><br>For example,<br><span class="console">$ reverse [1,2,3,4,5]</span><br>
+           <br>will print<br> <span class="console">[5,4,3,2,1]</span>. </p>
+    </p>
+    <!-- Arrays -->
+    <h1>Arrays</h1>
+    <p class="p_container"> Arrays in Haskell is defined in many ways. An example of creating an array would be <span class="console">array :: (Ix a) => (a,a) -> [(a,b)] -> Array a b</span>
+    </p>
+
+    <h1>Tuples</h1>
+     <p class="p_container"> Haskell is one of the awesome language for solving mathematics problems. It has some interesting features like taking two
+       lists and zipping it as an order pairs. <br><br>For example, <br><span class="console">$ zip [1,2,3] ["Haskell","is","awesome"]</span><br><br> will print<br><span class="console">[(1,"Haskell"),(2,"is"),(3,"awesome")]</span>.<br><br>
+       Similarly, <span class="console">$ fst (12, 15)</span> will print <span class="console">12</span> and <span class="console">$ snd ("WOW", True)</span> will print <span class="console">True</span>.
+     </p>
+
+    <h1>Threads</h1>
+     <p class="p_container"> Threads in Haskell is same as memory management in C or garbage collector in Java meaning the garbage
+       collection in Java, mallocing in C happens in the background. GHC, Haskell compiler, takes the source code and it optimize the
+       code. During optimization procedure, the compiler decides where the code should be converted to parallel, concurrent, or nothing else.
+       All this procedure happens underr the hood meaning we as a programmar cannot see what happened.
+     </p>
+     <h1>Importing Files</h1>
+      <p class="p_container">In Haskell, importing other files can be done using following lines of code. This is similar to extends in Java
+        and should be place at the top of the file. <span class="console">module Filename where <br> import filename</span>
+      </p>
+        </div>
+    </body>
+</html>
